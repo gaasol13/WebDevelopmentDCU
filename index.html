@@ -1,29 +1,49 @@
-<!DOCTYPE html> <!--DOCTYPe declaration for HTML5-->
+<!DOCTYPE html> <!-- DOCTYPE declaration for HTML5 -->
 <html lang="en">
     <head>
         <title>Assignment 1</title>
         <link rel="stylesheet" type="text/css" href="myStyleSheet.css">
-        <meta charset="UTF-8"> <!--encoding for the HTML document-->
-        <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!--Can be used to support older version of Internet Explorer-->
-        <meta name="viewport" content="width=device-width, inital-scale=1.0"> <!-- According to w3 tutorials
-        this will help to adjust the width of the page to follow screen width of device used -->
+        <meta charset="UTF-8"> <!-- Encoding for the HTML document -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures IE compatibility -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adjusts layout for mobile responsiveness -->
     </head>
-<body>
-<header>
-    <nav>
-        <ul> <!-- Unordered list linking to different pages-->
-            <li><a href="#" target="_self">Home </a></li> <!--_self ioens the document in the same window/tab as it was clicked-->
-            <li><a href="./pages/about.html" target="_self">About</a></li>
-            <li><a href="./pages/travel.html" target="_self">Travel</a></li>
-            <li><a href="./pages/educational.html" target="_self">Educational Programs</a></li>
-            <li><a href="./pages/contact.html" target="_self">Contact Us</a></li>
-            <li>LOGIN</li> <!--LOGIN PAGE-->
-        </ul>
-    </nav>
-    <hr>
-</header>
-
-    <h1>Welcome</h1>
-    <p>Welcome to my website</p>
-</body>
+    <body>
+        <header>
+            <nav>
+                <div class="container-header">
+                    <a href="#" target="_self">
+                        <div class="logo">
+                            <img src="images/MORRALAZO LOGO PERRITO.jpg" class="logo1" alt="logo" style="width: 100px; height: 100px;">
+                        </div>
+                    </a>
+                    <div id="headerlinks">
+                        <ul>
+                            <li><a href="#" target="_self">Home</a></li>
+                            <li><a href="./pages/travel.html" target="_self">Travel</a></li>
+                            <li><a href="./pages/about.html" target="_self">About</a></li>
+                            <li><a href="./pages/educational.html" target="_self">Study Abroad</a></li>
+                            <li><a href="./pages/contact.html" target="_self">Contact Us</a></li>
+                            <li><a href="./pages/login.html" target="_self">LOGIN</a></li> <!-- LOGIN page with link -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>           
+        </header>
+        <hr>
+        <section class="banner">
+            <div class="container">
+                <video autoplay loop muted style="width:100%">
+                    <source src="./video/Ireland_videp.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <h1>Welcome</h1>
+        <p>Welcome to my website</p>
+        <hr>
+        <footer>
+            <div class="footer">
+                <p>Footer</p>
+            </div>
+        </footer>
+    </body>
 </html>
