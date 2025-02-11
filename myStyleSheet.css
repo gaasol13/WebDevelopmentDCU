@@ -1,48 +1,171 @@
+/*reset default styles and set base styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
 }
 
+/*Header styling */
 header {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping for flex items */
-    text-align: right;
-    padding: 10px; /* Adjust padding for better visual appearance */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures header stays above other content */
+    padding: 15px 50px;
 }
 
-
-.container-header{
+.container-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/*Logo styling */
 .logo1 {
-    margin-left: auto; /* Align logo to the right */
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
-.header-links{
-    display: flex;    
+.logo1:hover {
+    transform: scale(1.05);
+}
+
+/*Navigation styling */
+#headerlinks ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px; /* Consistent spacing between links */
 }
 
 li {
     display: inline-block;
-    margin-right: 25px;  
-    
+    position: relative;
 }
 
 a {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     color: #499EBC;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px; /* Add some padding to make it more clickable */
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/*Hover effect for navigation links */
+a:hover {
+    color: #2c5d70;
+}
+
+/*add underline effect on hover */
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #499EBC;
+    transition: all 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/*destination section styling */
+.travel-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 
-h1 {
-    color: black;
+
+
+/*Contact form styling */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #499EBC;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c5d70;
+}
+
+/*section headings*/
+h2 {
+    color: #333;
     text-align: center;
+    margin: 40px 0 20px;
+    font-size: 32px;
 }
 
-hr { 
-    color: red;
+/*Horizontal line styling */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #499EBC;
+    margin: 20px 0;
+}
+
+/* Responsive design 
+The media will help me to allow to apply different styles based on the device*/ 
+@media screen and (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #headerlinks ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .logo1 {
+        margin-bottom: 15px;
+    }
+
+    form {
+        margin: 20px;
+    }
 }
