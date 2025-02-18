@@ -35,7 +35,8 @@
     <hr>
 
     <main>
-           <section class="travel-index">
+        <!--First grid-->
+        <section class="travel-index">
             <div class="travel-index-text">
                 <h1>Your Journey Begins Here</h1>
                 <p>Immersive tours guided by local artists and experts</p>
@@ -46,7 +47,7 @@
         <!--destinations -->
         <section class="destinations">
             <h2>Top Destinations</h2>
-            <div class="destination-grid">
+            <div class="destination-grid"> <!--grid with the destinations-->
                 <article class="destination-card">
                     <img src="images/banksy-newYork.jpg" alt="new-york">
                     <div class="destination-card-text">
@@ -99,7 +100,7 @@
         <section class="newsletter">
             <h2>Stay Updated</h2>
             <form class="signup-form">
-                <label for="email">Subscribe to our newsletter for street art news and tour updates:</label>
+                <label for="email" style="color: black">Subscribe to our newsletter for street art news and tour updates:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 <button type="submit" class="submit-button">Subscribe</button>
             </form>
@@ -114,7 +115,157 @@
                 <h4>Contact Us</h4>
                 <address>
                     <p>Email: info@morralazo.com</p>
-                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Phone: +353 (555) 123-4567</p>
+                </address>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./pages/about.html">About Us</a></li>
+                    <li><a href="./pages/faq.html">FAQs</a></li>
+                    <li><a href="./pages/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Visit our Instagram">Instagram</a>
+                    <a href="#" aria-label="Visit our Facebook">Facebook</a>
+                    <a href="#" aria-label="Visit our Twitter">Twitter</a>
+                </div>
+            </div>           
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 StreetArt Voyages. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+You said:
+I need you to help me write a description of my website, that is called morralazo travel agency, specialized in the tours of street art, also explaining some functionality in the code, <!DOCTYPE html> <!-- DOCTYPE declaration for HTML5 -->
+<html lang="en">
+
+<head>
+    <title>Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="myStyleSheet.css">
+    <meta charset="UTF-8"> <!-- Encoding for the HTML document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures IE compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adjusts layout for mobile responsiveness -->
+</head>
+
+<body>
+
+    <!-- header section with navigation-->
+    <header>
+        <nav class="main-nav">
+            <div class="container-header"> <!--contain the navigation links-->
+                <a href="index.html" target="_self">
+                    <figure class="logo">
+                        <img src="images/MORRALAZO LOGO PERRITO.jpg" alt="StreetArtVagabundo" class="logo-img">
+                        <figcaption>Morralazo StreetArt</figcaption>
+                    </figure>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#" target="_self">Home</a></li>
+                    <li><a href="./pages/destinations.html" target="_self">Destinations</a></li>
+                    <li><a href="./pages/tours.html" target="_self">Street Art Tours</a></li>
+                    <li><a href="./pages/artists.html" target="_self">Featured Artists</a></li>
+                    <li><a href="./pages/contact.html" target="_self">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <!--First grid-->
+        <section class="travel-index">
+            <div class="travel-index-text">
+                <h1>Your Journey Begins Here</h1>
+                <p>Immersive tours guided by local artists and experts</p>
+                <a href="./pages/tours.html" button class="cta-button">Explore</button>
+            </div>
+        </section>
+
+        <!--destinations -->
+        <section class="destinations">
+            <h2>Top Destinations</h2>
+            <div class="destination-grid"> <!--grid with the destinations-->
+                <article class="destination-card">
+                    <img src="images/banksy-newYork.jpg" alt="new-york">
+                    <div class="destination-card-text">
+                        <h3>Street Art in New York</h3>
+                        <p>Explore the vibrant street art scene in New York City</p>
+                        <a href="./pages/destinations.html" class="learn-more">Learn More</a>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="images/mexico.jpg" alt="mexico-city">
+                    <div class="destination-card-text">
+                        <h3>Street Art in Mexico City</h3>
+                        <p>Discover the hidden gems of Mexico's street art scene</p>
+                        <a href="./pages/destinations.html" class="learn-more">Learn More</a>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="images/bristol.jpg" alt="bristol">
+                    <div class="destination-card-text">
+                        <h3>Street Art in Bristol</h3>
+                        <p>Discover the home of Banksy</p>
+                        <a href="./pages/destinations.html" class="learn-more">Learn More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="features">
+            <h2>Why Choose StreetArt Voyages?</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>Expert Guides</h3>
+                    <p>Local artists and art historians lead our tours</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Small Groups</h3>
+                    <p>Intimate experiences with maximum 10 people per tour</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Photography Tips</h3>
+                    <p>Learn to capture street art like a pro</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <form class="signup-form">
+                <label for="email" style="color: black">Subscribe to our newsletter for street art news and tour updates:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="submit-button">Subscribe</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer> <!--footer with information relevant-->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <address>
+                    <p>Email: info@morralazo.com</p>
+                    <p>Phone: +353 (555) 123-4567</p>
                 </address>
             </div>
 
